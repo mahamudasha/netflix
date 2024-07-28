@@ -1,26 +1,36 @@
-*{
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+* {
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
-.main{
+body{
+    background-color: black;
+}
+
+.main {
     background-image: url("assets/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
     position: relative;
 
 }
-.main .box{
-  height: 80vh;  
-  width: 100%;
-  opacity: 0.70;
-  position: absolute;
-  top: 0;
-  background-color: black;
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
 
 }
-nav{
+
+nav {
     max-width: 60vw;
     margin: auto;
     display: flex;
@@ -28,23 +38,84 @@ nav{
     align-items: center;
     height: 62px;
 }
-nav img{
+
+nav img {
     color: rgba(255, 0, 0, 0.719);
     width: 140px;
     position: relative;
     z-index: 10;
 }
-nav button{
+
+nav button {
     position: relative;
     z-index: 10;
 }
-.hero{
-    height: 100%;
+
+.hero {
+    font-family: "Poppins", sans-serif;
+    height: calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1){
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400px;
+font-size: 24px;
+text-align: center;
 
+}
+.hero> :nth-child(3){
+    font-weight: 400px;
+font-size: 20px;
+text-align: center;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+.btn-red{
+background-color: red;
+color: white;
+padding: 3px 24px;
+font-size: 20px;
+border-radius: 4px;
+border: 0;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+padding: 7px 101px 8px 14px;
+font-weight: 900;
+font-size: 12px;
+border-radius: 4px;
+background-color: rgba(23, 23, 23, 0.7);
+border: 1px solid rgba(226, 238, 246, 0.5);
+
+}
+.btn-red-sn{
+background-color: red;
+color: white;
+border: 0;
 }
